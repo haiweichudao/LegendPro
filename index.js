@@ -16,6 +16,11 @@ const US = [
 	gender:"男",
 	address:"流沙河"
 },
+{name:"唐僧",
+	age:20,
+	gender:"男",
+	address:"东土大唐"
+}
 ]
 const app = express()
 app.set("view engine","ejs")
