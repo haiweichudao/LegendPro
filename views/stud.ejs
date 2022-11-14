@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ejs</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		th,td{
+			border: 1px solid #ccc;
+			font-size: 20px;
+			padding: 10px;
+			text-align: center;
+		}
+		caption{
+			font-size: 25px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>ejs</h1>
+	<table>
+		<caption>西游名单</caption>
+		<thead>
+		<tr>
+			<th>姓名</th>
+			<th>年龄</th>
+			<th>性别</th>
+			<th>住址</th>
+		</tr>
+		</thead>
+		<tbody>
+			<% for(const stu of US){%> 
+			<tr>
+				<th><%=stu.name%></th>
+				<th><%=stu.age%></th>
+				<th><%=stu.gender%></th>
+				<th><%=stu.address%></th>
+			</tr>
+		<% } %> 
+
+
+		</tbody>
+	</table>
+
+</body>
+</html>
